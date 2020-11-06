@@ -4,7 +4,7 @@ Exercise 1: a list of a specified length with randomly generated elements is cre
 
 Exercise 2: 2 functions are written. 1 is a recursive function, the other iterative. a user entered number is passed to both of these functions to show that they produce identical results.
 
-Exercise 3: a list of a specified length with randomly generated elements is created. The list is passed to a function which uses the built in list.sort() function to order the list, returning the list
+Exercise 3: a list of a specified length with randomly generated elements is created. The list is passed to a function which uses the built in list.sort() function to order the list, returning the ordered list
 
 
 Chapter 6
