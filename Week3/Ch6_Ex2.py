@@ -25,7 +25,7 @@ with open('ws.csv') as csvfile: #use with open to ensure correct closing of file
                 temp[j]=int(temp[j])
             else:   #if the element is not a number, it is replaced with zero
                 temp[j]=0
-        temp = [j for j in temp if j != 0]  #this deletes all zero elements of the temp list
+        temp = [j for j in temp if j != 0]  #this deletes all zero elements of the temp list - taken from https://stackoverflow.com/questions/49973739/python-how-to-remove-zeroes-from-a-list-in-python/49973765
         newdict[str(keylist[i])]['TCP_Source'] = temp[0]    #add new key to the newdict dictionaries to store info for the source tcp port
         newdict[str(keylist[i])]['TCP_Dest'] = temp[1]  #add new key to the newdict dictionaries to store info for the destination tcp port
 
