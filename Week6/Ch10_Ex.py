@@ -46,6 +46,50 @@ print(grouped.size())
 
 print(df.groupby(['Provider']).mean()["Price"])
 
+# End of notes
+
+# Exercise 1
+df = pd.read_csv("ws.csv")
+
+# Exercise 2
+print(df.shape[0]) # 30,922 packets
+
+# Exercise 3
+print(df.columns)
+print(len(df.columns))  # 7 columns
+
+# Exercise 4
+# df.drop(str(df.columns[-1]), axis = 1, inplace = True)
+print(df.columns)
+
+# Exercise 5
+# df.insert(6, 'Time per Length', df.loc[:,'Time']/df.loc[:,'Length'])
+print(df.columns)
+
+# Exercise 6
+print(df.loc[:,'Length'].max()) # Max Length is 1434
+
+# Exercise 7
+print(df.loc[:,'Length'].mean()) # Mean Length is 769
+
+# Exercise 8
+# Flow = IP src, IP dest, TCP src, TCP dest
+print(df.shape[0])
+df = df[df['Protocol'] != 'TCP']
+print(df.shape)
+
+x = df['Info']
+print(x.str.split(r""))
+
+
+
+
+
+
+
+
+
+
 
 
 
